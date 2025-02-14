@@ -1,11 +1,11 @@
 .container-navbar {
+    height: 70px;
     background-color: blueviolet;
     font-size: 50px;
     font-family: fantasy;
     text-align: center;
     border-style:dotted;
     border-color: chartreuse;
-    height: 45vw;
-
-
+    position: sticky;
+    top: 0;
 }
