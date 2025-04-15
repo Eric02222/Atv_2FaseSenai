@@ -1,9 +1,11 @@
 import './App.css'
 import Bondinho from './components/Bondinho'
 import CalcularPressao from './components/CalcularPressao'
+import CorridaLesma from './components/CorridaLesma'
 import PUM from './components/PUM'
 import QuantidadeHo from './components/QuantidadeHo'
 import TipoCombustivel from './components/TipoCombustivel'
+import ValorIngresso from './components/ValorIngresso'
 import VerificarNota from './components/VerificarNota'
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <Bondinho/>
       <PUM/>
       <TipoCombustivel/>
+      <ValorIngresso/>
+      <CorridaLesma/> 
     </div>
   )
 }

@@ -1,13 +1,13 @@
-#container-combustivel{
+#container-corridaLe {
     display: flex;
     flex-direction: column;
     padding: 5%;
     border-radius: 15px;
-    background-color: rgb(165, 50, 79);
+    background-color: rgb(196, 66, 137);
     margin-bottom: 5%;
     color: rgb(255, 255, 255);
 }
 
-#container-combustivel button{
+#container-corridaLe button{
     margin: 5%;
 }

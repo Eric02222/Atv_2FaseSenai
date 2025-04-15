@@ -2,43 +2,51 @@ import React, { useState } from 'react'
 import './tipoComb.css'
 
 function TipoCombustivel() {
-    const [resultado, setResultado] = useState('')
+    const [alcohol, setAlcohol] = useState(0)
+    const [gasoline, setGasoline] = useState(0)
+    const [diesel, setDiesel] = useState(0)
+    const [msg, setMsg] = useState('')
 
     function escCombustivel() {
-        let Alcohol = 0;
-        let Gasoline = 0;
-        let Diesel = 0; 
-        let escolha = Number(prompt('Digite qual sua preferencia de combustivel'));
-        
+        let mensagem;
 
-        while(escolha != 4) {
-            if(escolha == 1){
-                Alcohol++
-            }else if(escolha == 2){
-                Gasoline++
-            }else if(escolha == 3){
-                Diesel++
-            }
+        mensagem = `Alcohol: ${alcohol}` +
+            `| Gasoline: ${gasoline}` +
+            ` | Diesel: ${diesel}`
 
-            escolha = Number(prompt('Digite qual sua preferencia de combustivel'));
-        }
+        setAlcohol(0);
+        setGasoline(0);
+        setDiesel(0);
+        setMsg(mensagem);
 
-        setResultado('Alcohol: ' + Alcohol + ' | Gasoline: ' + Gasoline + ' | Diesel: ' + Diesel);
     }
+
+
 
     return (
         <div id='container-combustivel'>
             <div><h2>TipoCombustivel</h2></div>
-            
+
+            <div>
+                <p>Alcohol</p>
+                <input type="Number" value={alcohol} onChange={(event) => { const novoValor = Number(event.target.value); setAlcohol(novoValor) }} />
+                <p>Gasoline</p>
+                <input type="Number" value={gasoline} onChange={(event) => { const novoValor = Number(event.target.value); setGasoline(novoValor) }} />
+                <p>Diesel</p>
+                <input type="Number" value={diesel} onChange={(event) => { const novoValor = Number(event.target.value); setDiesel(novoValor) }} />
+
+            </div>
 
             <div>
                 <button onClick={escCombustivel}>Dar Feedback</button>
             </div>
 
             <div>
-                <h3>{resultado}</h3>
+                <h3>
+                    {msg}
+                </h3>
             </div>
-        </div>  
+        </div>
     )
 }
 
