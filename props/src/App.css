@@ -1,17 +1,42 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 .container-app{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+  
+}
+
+.cards {
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 10px;
+  background-color: black;
+}
+
+.form-produto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: solid rgb(80, 80, 80);
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .logo {
