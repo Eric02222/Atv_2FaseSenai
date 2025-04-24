@@ -1,0 +1,19 @@
+.container-headerFm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-1);
+    padding: 1%;
+    gap: 15%;
+}
+
+.container-headerFm a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: large;
+}
+
+#logo {
+    height: 110px;
+}
