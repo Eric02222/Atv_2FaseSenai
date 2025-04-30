@@ -1,0 +1,9 @@
+.container_header{
+    height: 70px;
+    background-color: var(--cor-4);
+    color: var(--cor-2);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
