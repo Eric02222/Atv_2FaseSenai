@@ -11,7 +11,7 @@ function ControleSaldo() {
     useEffect(() => console.log(operacao), [operacao])
 
     function credito() {
-        if (!valorInput) {
+        if (!valorInput || !tipoMovimentacao) {
             alert("digite o valor ")
         } else {
             let novoValor = saldo + valorInput;
@@ -33,7 +33,7 @@ function ControleSaldo() {
 
     function debito() {
 
-        if (!valorInput) {
+        if (!valorInput || !tipoMovimentacao) {
             alert("digite o valor ")
         } else {
             let novoValor = saldo - valorInput;
@@ -62,9 +62,9 @@ function ControleSaldo() {
 
             <h3>Saldo: {saldo}</h3>
 
-            <input type="Number " placeholder='Nome da Movimentação' className='input-valor' value={tipoMovimentacao} onChange={(event) => { setTipoMovimentacao(event.target.value) }} />
+            <input type="text " placeholder='Nome da Movimentação' className='input-valor' value={tipoMovimentacao} onChange={(event) => { setTipoMovimentacao(event.target.value) }} />
 
-            <input type="Number " placeholder='Valor' className='input-valor' value={valorInput} onChange={(event) => { setValorInput(Number(event.target.value)) }} />
+            <input type="text " placeholder='Valor' className='input-valor' value={valorInput} onChange={(event) => { setValorInput(Number(event.target.value)) }} />
 
 
             <div className='botoes-saldo'>
