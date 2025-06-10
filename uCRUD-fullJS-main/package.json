@@ -1,0 +1,19 @@
+{
+  "name": "ucrud-fulljs-main",
+  "version": "1.0.0",
+  "description": "Microprojeto educativo fullstack com foco em simplicidade, clareza e independência tecnológica. Aqui você encontrará múltiplas implementações de frontend e backend para um CRUD de clientes, usando apenas JavaScript puro (Node.js + JS no front) ou React, e com suporte a múltiplos bancos de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
